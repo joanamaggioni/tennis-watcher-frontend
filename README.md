@@ -23,13 +23,9 @@ Este é o frontend da Plataforma de Tênis, uma aplicação web construída em R
 - CSS modular e responsivo
 
 ## Como rodar localmente
-Clone este repositório: git clone git@github.com:joanamaggioni/tennis-watcher-frontend.git
-Entre na pasta do frontend, e instale as dependências:
-npm install
-
-Inicie o servidor de desenvolvimento:
-npm start
-
+- Clone este repositório: git clone git@github.com:joanamaggioni/tennis-watcher-frontend.git
+- Entre na pasta do frontend, e instale as dependências: npm install
+- Inicie o servidor de desenvolvimento: npm start
 A aplicação estará disponível em http://localhost:3000
 
 Configurações importantes
