@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Plataforma de Tênis - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
 
-## Available Scripts
+Este é o frontend da Plataforma de Tênis, uma aplicação web construída em React para visualização interativa de partidas, jogadores e estatísticas de tênis. O frontend consome uma API backend que gerencia autenticação, usuários e dados da aplicação.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- Login e cadastro de usuários com persistência de token via `localStorage`
+- Navegação protegida por rotas, com controle de acesso baseado no perfil do usuário (comum ou admin)
+- Visualização de jogadores com cards que exibem imagem, país e data de nascimento (consumo de API externa)
+- Busca e exibição de partidas com cards scrolláveis
+- Dashboard com partidas ao vivo e dados em tempo real
+- Tela de configurações para administração de usuários (apenas para admins)
+- Layout responsivo para dispositivos móveis e desktop
+- Sidebar fixa para facilitar navegação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Router DOM
+- Axios
+- CSS modular e responsivo
 
-### `npm test`
+## Como rodar localmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone este repositório:
+   git clone git@github.com:joanamaggioni/tennis-watcher-frontend.git
+Entre na pasta do frontend, e instale as dependências:
+npm install
 
-### `npm run build`
+Inicie o servidor de desenvolvimento:
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A aplicação estará disponível em http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Configurações importantes
+O frontend espera que o backend (git@github.com:joanamaggioni/tennis-watcher-backend.git) esteja rodando e disponível em uma URL configurada (ex: http://localhost:5000).
+O token JWT é armazenado no localStorage para persistência da sessão.
+As rotas protegidas bloqueiam acesso a páginas de acordo com o perfil do usuário.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Próximos passos / melhorias
+Integração com banco de dados real
+Notificações em tempo real usando WebSockets
+Melhorias na UX e UI
+Inclusão de mais estatísticas e filtros avançados
