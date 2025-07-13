@@ -1,0 +1,80 @@
+.content {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.new-user {
+  padding: 8px 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 120px;
+  max-width: 20%;
+}
+
+.new-user:hover {
+  background-color: #27ae60;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+}
+
+.users-table th, .users-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+  background: #f2f2f2;
+}
+
+.users-table button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.users-table button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .settings-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .new-user {
+    width: 100%;
+  }
+
+  .users-table th, .users-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

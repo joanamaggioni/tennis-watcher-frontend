@@ -1,0 +1,95 @@
+.content {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+input[type="date"],
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+button {
+  background-color: #392620;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  color: #6b4c3b;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.matches-list {
+  margin-top: 1rem;
+}
+
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.match-card {
+  background-color: #f4f6f8;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.match-card p {
+  margin: 0.4rem 0;
+  line-height: 1.4;
+}
+
+.players {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #2d3436;
+}

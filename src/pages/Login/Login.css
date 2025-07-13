@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #392620;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #392620;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  color: #6b4c3b;
+}
+
+.register-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #392620;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #6b4c3b;
+}
+
+.auth-container {
+ min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
