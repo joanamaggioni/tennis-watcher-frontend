@@ -33,12 +33,12 @@ npm start
 A aplicação estará disponível em http://localhost:3000
 
 Configurações importantes
-O frontend espera que o backend (git@github.com:joanamaggioni/tennis-watcher-backend.git) esteja rodando e disponível em uma URL configurada (ex: http://localhost:5000).
-O token JWT é armazenado no localStorage para persistência da sessão.
-As rotas protegidas bloqueiam acesso a páginas de acordo com o perfil do usuário.
+- O frontend espera que o backend (git@github.com:joanamaggioni/tennis-watcher-backend.git) esteja rodando e disponível em uma URL configurada (ex: http://localhost:5000).
+- O token JWT é armazenado no localStorage para persistência da sessão.
+- As rotas protegidas bloqueiam acesso a páginas de acordo com o perfil do usuário.
 
 ## Próximos passos / melhorias
-Integração com banco de dados real
-Notificações em tempo real usando WebSockets
-Melhorias na UX e UI
-Inclusão de mais estatísticas e filtros avançados
+- Integração com banco de dados real
+- Notificações em tempo real usando WebSockets
+- Melhorias na UX e UI
+- Inclusão de mais estatísticas e filtros avançados
